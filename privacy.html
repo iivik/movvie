@@ -3,73 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movvie - Privacy Policy</title>
+    <title>Privacy Policy - Movvie</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1 { color: #E50914; }
-        h2 { color: #444; margin-top: 30px; }
-        a { color: #E50914; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #0a0a0a;
+            color: #cccccc;
+            line-height: 1.8;
+        }
+        
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .logo-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+        
+        .logo-header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+        }
+        
+        .logo-header span {
+            font-size: 1.5em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: white;
+        }
+        
+        nav a {
+            color: #999;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #E50914;
+        }
+        
+        /* Content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            font-weight: 900;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #E50914 0%, #FF6B6B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .last-updated {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 50px;
+            font-style: italic;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #ffffff;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            color: #aaaaaa;
+            font-size: 1.05em;
+        }
+        
+        strong {
+            color: #ffffff;
+        }
+        
+        ul {
+            margin: 20px 0 20px 30px;
+            color: #aaaaaa;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        
+        a {
+            color: #E50914;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: #FF6B6B;
+            text-decoration: underline;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 60px 0 40px 0;
+        }
+        
+        .back-link {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+        }
+        
+        .back-link a {
+            background: #E50914;
+            color: white;
+            padding: 14px 35px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .back-link a:hover {
+            background: #c40812;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 20px 30px;
+            }
+            
+            .container {
+                padding: 60px 30px;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy for Movvie</h1>
-    <p><em>Last updated: January 2026</em></p>
+    <!-- Header -->
+    <header>
+        <a href="/" class="logo-header">
+            <img src="assets/icon.png" alt="Movvie">
+            <span>MOVVIE</span>
+        </a>
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+    </header>
 
-    <h2>Overview</h2>
-    <p>Movvie ("the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our movie discovery application.</p>
+    <!-- Content -->
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: January 2026</p>
 
-    <h2>Information We Collect</h2>
-    <p><strong>We do not collect any personal information.</strong></p>
-    <p>Movvie does not require account creation, email addresses, names, or any personally identifiable information to use the app.</p>
+        <h2>Overview</h2>
+        <p>Movvie ("the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our movie discovery application.</p>
 
-    <h2>Data Storage</h2>
-    <p>The following data is stored locally on your device only:</p>
-    <ul>
-        <li>Your movie shortlist (saved movies)</li>
-        <li>Your swipe history (movies you've seen)</li>
-        <li>App preferences (filters, settings)</li>
-    </ul>
-    <p>This data never leaves your device and is not transmitted to our servers or any third parties.</p>
+        <h2>Information We Collect</h2>
+        <p><strong>We do not collect any personal information.</strong></p>
+        <p>Movvie does not require account creation, email addresses, names, or any personally identifiable information to use the app.</p>
 
-    <h2>Third-Party Services</h2>
-    <p>Movvie uses the following third-party service:</p>
-    <ul>
-        <li><strong>The Movie Database (TMDB)</strong> - We retrieve movie information, posters, ratings, and trailers from TMDB's public API. When you browse movies, your device makes requests to TMDB's servers. Please review <a href="https://www.themoviedb.org/privacy-policy" target="_blank">TMDB's Privacy Policy</a> for details on how they handle data.</li>
-    </ul>
+        <h2>Data Storage</h2>
+        <p>The following data is stored locally on your device only:</p>
+        <ul>
+            <li>Your movie shortlist (saved movies)</li>
+            <li>Your swipe history (movies you've seen)</li>
+            <li>App preferences (filters, settings)</li>
+        </ul>
+        <p>This data never leaves your device and is not transmitted to our servers or any third parties.</p>
 
-    <h2>External Links</h2>
-    <p>Movvie may contain links to external websites (such as JustWatch for streaming availability or YouTube for trailers). We are not responsible for the privacy practices of these external sites.</p>
+        <h2>Third-Party Services</h2>
+        <p>Movvie uses the following third-party service:</p>
+        <ul>
+            <li><strong>The Movie Database (TMDB)</strong> - We retrieve movie information, posters, ratings, and trailers from TMDB's public API. When you browse movies, your device makes requests to TMDB's servers. Please review <a href="https://www.themoviedb.org/privacy-policy" target="_blank">TMDB's Privacy Policy</a> for details on how they handle data.</li>
+        </ul>
 
-    <h2>Children's Privacy</h2>
-    <p>Movvie is designed to be family-friendly and includes content filtering for children. We do not knowingly collect information from children under 13.</p>
+        <h2>External Links</h2>
+        <p>Movvie may contain links to external websites (such as JustWatch for streaming availability or YouTube for trailers). We are not responsible for the privacy practices of these external sites.</p>
 
-    <h2>Data Deletion</h2>
-    <p>Since all data is stored locally on your device, you can delete all app data at any time by:</p>
-    <ul>
-        <li>Using the "Reset Everything" option in the app's Settings</li>
-        <li>Deleting the Movvie app from your device</li>
-    </ul>
+        <h2>Children's Privacy</h2>
+        <p>Movvie is designed to be family-friendly and includes content filtering for children. We do not knowingly collect information from children under 13.</p>
 
-    <h2>Analytics and Tracking</h2>
-    <p>Movvie does not use analytics, tracking pixels, or advertising networks.</p>
+        <h2>Data Deletion</h2>
+        <p>Since all data is stored locally on your device, you can delete all app data at any time by:</p>
+        <ul>
+            <li>Using the "Reset Everything" option in the app's Settings</li>
+            <li>Deleting the Movvie app from your device</li>
+        </ul>
 
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date.</p>
+        <h2>Analytics and Tracking</h2>
+        <p>Movvie does not use analytics, tracking pixels, or advertising networks.</p>
 
-    <h2>Contact</h2>
-    <p>If you have questions about this Privacy Policy, please contact us at:</p>
-    <p>Email: sakivva@gmail.com</p>
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date.</p>
 
-    <hr>
-    <p style="text-align: center; color: #888; font-size: 14px;">
-        <a href="/">Back to Movvie</a>
-    </p>
+        <h2>Contact</h2>
+        <p>If you have questions about this Privacy Policy, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:sakivva@gmail.com">sakivva@gmail.com</a></p>
+
+        <hr>
+
+        <div class="back-link">
+            <a href="/">← Back to Movvie</a>
+        </div>
+    </div>
 </body>
 </html>
