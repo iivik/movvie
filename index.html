@@ -315,8 +315,8 @@
         </div>
         <nav>
             <a href="https://x.com/movvieapp" target="_blank">X</a>
-            <a href="/privacy.html">Privacy</a>
-            <a href="/terms.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
         </nav>
     </header>
 
@@ -333,11 +333,15 @@
 		<h1>Good movie night, sorted in seconds.</h1>
 		<p>Swipe. Choose. Watch together.</p>
             
-            <div class="cta-buttons">
-                <button class="cta-primary" id="downloadBtn">Download on iOS</button>
-                <a href="https://x.com/movvieapp" class="cta-secondary" target="_blank">See it on X</a>
-                <span class="platform-note">iPhone only</span>
-            </div>
+
+		<div class="cta-buttons">
+		  <a href="https://apps.apple.com/in/app/movvie/id6758516520" class="cta-primary" id="downloadBtn">
+		    Download on iOS
+		  </a>
+		  <a href="https://x.com/movvieapp" class="cta-secondary" target="_blank">See it on X</a>
+		  <span class="platform-note">iPhone only</span>
+		</div>
+
         </div>
     </section>
 
@@ -346,13 +350,13 @@
         <h2>A quick look</h2>
         <div class="screenshots-grid">
             <div class="screenshot-card">
-                <img src="assets/screenshot1.png" alt="Swipe through movies">
+                <img src="assets/ws-screenshot1.png" alt="Swipe through movies">
             </div>
             <div class="screenshot-card">
-                <img src="assets/screenshot2.png" alt="Like movies">
+                <img src="assets/ws-screenshot2.png" alt="Like movies">
             </div>
             <div class="screenshot-card">
-                <img src="assets/screenshot3.png" alt="Skip movies">
+                <img src="assets/ws-screenshot3.png" alt="Skip movies">
             </div>
         </div>
     </section>
@@ -360,8 +364,8 @@
     <!-- Footer -->
     <footer>
         <div class="footer-links">
-            <a href="/privacy.html">Privacy Policy</a>
-            <a href="/terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
             <a href="https://x.com/movvieapp" target="_blank">@movvieapp</a>
             <a href="mailto:sakivva+movvie@gmail.com">Contact</a>
         </div>
@@ -373,7 +377,7 @@
     </footer>
 
     <script>
-        document.getElementById('downloadBtn').addEventListener('click', function() {
+        // document.getElementById('downloadBtn').addEventListener('click', function() {
             alert('Movvie is launching soon on the App Store! Follow @movvieapp for updates.');
         });
     </script>
